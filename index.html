@@ -205,25 +205,6 @@
 			};
 		</script>
 	</div>
-	<nav aria-label="ページネーションの例">
-		<ul class="pagination justify-content-center">
-			<li class="page-item">
-				<a class="page-link" href="#">前</a>
-			</li>
-			<li class="page-item">
-				<a class="page-link" href="#">1</a>
-			</li>
-			<li class="page-item">
-				<a class="page-link" href="#">2</a>
-			</li>
-			<li class="page-item">
-				<a class="page-link" href="#">3</a>
-			</li>
-			<li class="page-item">
-				<a class="page-link" href="#">次</a>
-			</li>
-		</ul>
-	</nav>
 	<div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"></li>
@@ -254,5 +235,90 @@
 			<span class="visually-hidden">次に送る</span>
 		</a>
 	</div>
+	<div class="accordion" id="accordion">
+		<div class="accordion-item">
+			<div class="accordion-header" id="headingOne">
+				<h5 class="mb-0">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+																																							aria-expanded="true" aria-controls="collapseOne">
+						アコーディオン０１の切替ボタン
+					</button>
+				</h5>
+			</div>
+			<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+				<div class="accordion-body">
+					てすと
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<div class="accordion-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+																																							aria-expanded="true" aria-controls="collapseTwo">
+						アコーディオン０２の切替ボタン
+					</button>
+				</h5>
+			</div>
+			<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+				<div class="accordion-body">
+					てすと
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<div class="accordion-header" id="headingThree">
+				<h5 class="mb-0">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+																																							aria-expanded="true" aria-controls="collapseThree">
+						アコーディオン０３の切替ボタン
+					</button>
+				</h5>
+			</div>
+			<div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordion">
+				<div class="accordion-body">
+					てすと
+				</div>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+		切替ボタン
+	</button>
+	<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">モーダルのタイトル</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					モーダルの本文が入ります。
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav aria-label="ページネーションの例">
+		<ul class="pagination justify-content-center">
+			<li class="page-item">
+				<a class="page-link" href="#">前</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">1</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">2</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">3</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">次</a>
+			</li>
+		</ul>
+	</nav>
 </body>
 </html>
