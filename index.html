@@ -283,7 +283,7 @@
 		</div>
 	</div>
 	<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-		切替ボタン
+		モーダル
 	</button>
 	<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
@@ -300,6 +300,58 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#exampleOffcanvas">
+		オフキャンバス
+	</button>
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="exampleOffcanvas" aria-labelledby="exampleOffcanvasLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="exampleOffcanvasLabel">オフキャンバス</h5>
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<div>
+				オフキャンバスの本文
+			</div>
+			<div class="dropdown mt-3">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+					ドロップダウン
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<li><a class="dropdown-item" href="#">アクション1</a></li>
+					<li><a class="dropdown-item" href="#">アクション2</a></li>
+					<li><a class="dropdown-item" href="#">アクション3</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="ポップオーバー" data-bs-content="ポップオーバーは美味しいパンです。">
+		ポップオーバー
+	</button>
+	<script>
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+		var popoverList = popoverTriggerList.map(function (popoverTriggerElem) {
+			return new bootstrap.Popover(popoverTriggerElem);
+		});
+	</script>
+	<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="上に">
+		ツールチップ
+	</button>
+	<script>
+		let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+		let tooltipList = tooltipTriggerList.map(function (tooltipTriggerElem) {
+			return new bootstrap.Tooltip(tooltipTriggerElem)
+		});
+	</script>
+	<div class="container">
+		<div class="h-25 d-inline-block">h-25</div>
+		<div class="h-50 d-inline-block">h-50</div>
+		<div class="h-75 d-inline-block">h-75</div>
+		<div class="h-100 d-inline-block">h-100</div>
+		<div class="h-auto d-inline-block">h-auto</div>
+	</div>
+	<div class="ratio ratio-16x9">
+		<iframe src="https://www.youtube.com/embed/Tdd7JG4G3Pk" allow="fullscreen"></iframe>
 	</div>
 	<nav aria-label="ページネーションの例">
 		<ul class="pagination justify-content-center">
